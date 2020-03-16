@@ -1,3 +1,382 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+* {
+    box-sizing: border-box;
+    font-family: "Gotham", sans-serif;
+}
+/* My Code */
+
+.container {
+    /* border: 2px solid red; */
+
+    display: flex;
+    flex-direction: column;
+
+    width: 1000px;
+    margin: 0 auto;
+}
 
 
+/* Navigation Content */
+
+a {
+    text-decoration: none;
+    color: grey;
+    font-family: "Gotham", sans-serif;
+}
+
+/* Navigation Container*/
+
+hr {
+    display: none;
+}
+
+.top-nav {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.top-nav ul {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Items*/
+.top-nav li {
+    flex: 3;
+}
+
+.top-nav .logo {
+    flex: 1;
+}
+
+
+/* Hero */
+.header {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.cta {
+    text-align: center;
+    flex: 1;
+    /* border: 2px solid red; */
+}
+
+h1 {
+    font-family: "Product Sans", sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.cta-b{
+    
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 160px;
+    height: 40px;
+
+    font-family: "Product Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.hero-img{
+    /* border: 2px solid red; */
+}
+
+/* Section Dividers */
+
+.section-divider {
+    border: 1.5px solid black;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Middle Content */
+.middle-content {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.m-top-o-container {
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.top-offerings {
+    /* border: 2px solid purple; */
+    display: flex;
+    flex-direction: column; 
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+
+.bottom-offerings {
+    /* border: 2px solid purple; */
+    display: flex;
+    flex-direction: column; 
+    
+    margin-left: 10px;
+    margin-right: 10px;
+
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "Product Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    /* margin-top: 12px;
+    margin-bottom: 12px; */
+}
+
+.middle-content p {
+    font-family: "Gotham", sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.m-bottom-o-container {
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.m-img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    border-radius: 12px;
+}
+
+
+/* Bottom Content */
+.bottom-content {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-family: "Product Sans", sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.bottom-content p {
+    font-family: "Gotham", sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+/* Footer Content */
+
+footer {
+    
+    font-family: "Gotham", sans-serif;
+
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    color: grey;
+}
+
+
+/* Tablet Logo */
+
+.tablet-logo {
+    display: none;
+}
+
+/* Mobile Menu */
+
+.mobile-menu {
+    display: none;
+}
+
+/* --- Media Queries ---*/
+
+@media (max-width: 800px){
+
+    .container{
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .hero-img{
+       display: none;
+    }
+
+    /* TOP NAV */
+/* Navigation Container*/
+
+    .top-nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .tablet-logo {
+        display: flex;
+        flex: 1;
+        list-style: none;
+
+        margin: 0 auto;
+
+        margin-top: 40px;
+
+    }
+   
+}
+
+/* Mobile View */
+@media (max-width: 500px){
+
+
+    .container{ 
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .top-nav ul{ 
+    flex-direction: column;
+    }
+
+    .top-nav li {
+        flex: 1 1 100%;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    hr {
+     display: block;
+     width: 100%;
+
+     border: 1px solid grey;
+    }
+
+
+    /* Middle Content */
+
+    .m-top-o-container{
+    flex-direction: column; 
+    }
+
+    .m-bottom-o-container{
+    flex-direction: column;   
+    }
+
+    .bottom-content {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    background-color: lightgrey;
+
+    width: 100%;
+    height: 200px;
+    }
+
+    .container > *{
+        order:99;
+    }
+
+}
